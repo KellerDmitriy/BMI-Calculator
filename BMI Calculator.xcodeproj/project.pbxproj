@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E14C4D522A0303C100BDC222 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C4D512A0303C100BDC222 /* ResultViewController.swift */; };
+		E14C4D812A08CB9000BDC222 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C4D802A08CB9000BDC222 /* CalculatorBrain.swift */; };
+		E14C4D832A092B3500BDC222 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C4D822A092B3500BDC222 /* BMI.swift */; };
 		E1C587E729FF06BE003CA883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C587E629FF06BE003CA883 /* AppDelegate.swift */; };
 		E1C587E929FF06BE003CA883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C587E829FF06BE003CA883 /* SceneDelegate.swift */; };
-		E1C587EB29FF06BE003CA883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C587EA29FF06BE003CA883 /* ViewController.swift */; };
+		E1C587EB29FF06BE003CA883 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C587EA29FF06BE003CA883 /* SettingViewController.swift */; };
 		E1C587EE29FF06BE003CA883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C587EC29FF06BE003CA883 /* Main.storyboard */; };
 		E1C587F029FF06BE003CA883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C587EF29FF06BE003CA883 /* Assets.xcassets */; };
 		E1C587F329FF06BE003CA883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C587F129FF06BE003CA883 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E14C4D512A0303C100BDC222 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E14C4D802A08CB9000BDC222 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		E14C4D822A092B3500BDC222 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		E1C587E329FF06BE003CA883 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C587E629FF06BE003CA883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C587E829FF06BE003CA883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1C587EA29FF06BE003CA883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1C587EA29FF06BE003CA883 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E1C587ED29FF06BE003CA883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1C587EF29FF06BE003CA883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C587F229FF06BE003CA883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E14C4D7F2A08CB6C00BDC222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E14C4D802A08CB9000BDC222 /* CalculatorBrain.swift */,
+				E14C4D822A092B3500BDC222 /* BMI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E1C587DA29FF06BE003CA883 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +71,41 @@
 		E1C587E529FF06BE003CA883 /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				E1C587E629FF06BE003CA883 /* AppDelegate.swift */,
-				E1C587E829FF06BE003CA883 /* SceneDelegate.swift */,
-				E1C587EA29FF06BE003CA883 /* ViewController.swift */,
-				E1C587EC29FF06BE003CA883 /* Main.storyboard */,
+				E1C587FC29FF0729003CA883 /* ViewControllers */,
+				E14C4D7F2A08CB6C00BDC222 /* Models */,
+				E1C587FB29FF0706003CA883 /* Storyboards */,
+				E1C587FA29FF06DD003CA883 /* App */,
 				E1C587EF29FF06BE003CA883 /* Assets.xcassets */,
-				E1C587F129FF06BE003CA883 /* LaunchScreen.storyboard */,
-				E1C587F429FF06BE003CA883 /* Info.plist */,
 			);
 			path = "BMI Calculator";
+			sourceTree = "<group>";
+		};
+		E1C587FA29FF06DD003CA883 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E1C587E629FF06BE003CA883 /* AppDelegate.swift */,
+				E1C587E829FF06BE003CA883 /* SceneDelegate.swift */,
+				E1C587F429FF06BE003CA883 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1C587FB29FF0706003CA883 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E1C587EC29FF06BE003CA883 /* Main.storyboard */,
+				E1C587F129FF06BE003CA883 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E1C587FC29FF0729003CA883 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1C587EA29FF06BE003CA883 /* SettingViewController.swift */,
+				E14C4D512A0303C100BDC222 /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C587EB29FF06BE003CA883 /* ViewController.swift in Sources */,
+				E1C587EB29FF06BE003CA883 /* SettingViewController.swift in Sources */,
 				E1C587E729FF06BE003CA883 /* AppDelegate.swift in Sources */,
 				E1C587E929FF06BE003CA883 /* SceneDelegate.swift in Sources */,
+				E14C4D812A08CB9000BDC222 /* CalculatorBrain.swift in Sources */,
+				E14C4D832A092B3500BDC222 /* BMI.swift in Sources */,
+				E14C4D522A0303C100BDC222 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +333,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BMI Calculator/Info.plist";
+				INFOPLIST_FILE = "BMI Calculator/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "keller.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +365,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BMI Calculator/Info.plist";
+				INFOPLIST_FILE = "BMI Calculator/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +379,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "keller.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
